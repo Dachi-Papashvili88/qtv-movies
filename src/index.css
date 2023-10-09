@@ -1,3 +1,13 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+
+/*
+=============== 
+Variables
+===============
+*/
+
+:root {
+   --clr-header: #023e8a;
+   --clr-footer: #051923;
+}
