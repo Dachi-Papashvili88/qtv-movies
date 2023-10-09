@@ -13,13 +13,12 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <Logo to="/">
-        <img src="logo.png" alt="" />
-        <h1>ქრისტიანული ფილმები</h1>
+        <img src="QTV Logo.svg" alt="" />
       </Logo>
       <MenuButton onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaBars />} {/* Use React Icons here */}
       </MenuButton>
-      <Menu open={menuOpen}>
+      <Menu open={menuOpen} className="menu">
         <Link to="/">მთავარი</Link>
         <Link to="about">ფილმები</Link>
         <Link to="contact">კონტაქტი</Link>
@@ -45,8 +44,8 @@ const NavbarContainer = styled.nav`
   }
 
   img {
-    width: 1.5em;
-    height: 1.5em;
+    width: 10em;
+    height: 2.5em;
     border-radius: 3px;
   }
 
@@ -54,7 +53,14 @@ const NavbarContainer = styled.nav`
     margin-left: 0.5em;
   }
 
-  
+  a {
+    color: white;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: blue;
+  }
 `;
 
 const Logo = styled(Link)`
