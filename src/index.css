@@ -7,6 +7,10 @@ Variables
 ===============
 */
 
+body {
+   background-color: #edf2f4;
+}
+
 :root {
    --clr-header: #023e8a;
    --clr-footer: #051923;

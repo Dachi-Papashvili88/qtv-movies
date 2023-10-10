@@ -68,7 +68,8 @@ const NavbarContainer = styled.nav`
   }
 
   a:hover {
-    color: blue;
+    color: #ffffff;
+    border-bottom: 1.5px solid white;
   }
 `;
 

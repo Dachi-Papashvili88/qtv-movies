@@ -13,7 +13,7 @@ const Contact = () => {
       <div className="contact-container">
         <div className="contact">
           <h2>მისამართი</h2>
-          <p>ვ. ბოჭორიშვილის #37Bთბილისი, საქართველო</p>
+          <p>ვ. ბოჭორიშვილის #37B თბილისი, საქართველო</p>
         </div>
         <div className="contact">
           <h2>ელ.ფოსტა</h2>
