@@ -13,14 +13,16 @@ const Navbar = () => {
   return (
     <NavbarContainer>
       <Logo to="/">
-        <img src="QTV Logo.svg" alt="" />
+        <img className="logo-img" src="QTV Logo.svg" alt="საიტის ლოგო" />
+        <h3 className="logos-text">ქრისტიანული ფილმები</h3>
       </Logo>
       <MenuButton onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaBars />} {/* Use React Icons here */}
       </MenuButton>
       <Menu open={menuOpen} className="menu">
         <Link to="/">მთავარი</Link>
-        <Link to="about">ფილმები</Link>
+        <Link to="movies">ფილმები</Link>
+        <Link to="animations">ანიმაციები</Link>
         <Link to="contact">კონტაქტი</Link>
       </Menu>
     </NavbarContainer>
@@ -43,8 +45,7 @@ const NavbarContainer = styled.nav`
     }
   }
 
-  img {
-    width: 10em;
+  .logo-img {
     height: 2.5em;
     border-radius: 3px;
   }
@@ -58,6 +59,14 @@ const NavbarContainer = styled.nav`
     text-decoration: none;
   }
 
+  .logos-text {
+    hover: none;
+    text-decoration: none;
+    color: white;
+    margin-left: 0.6em;
+    margin-top: 0.65em;
+  }
+
   a:hover {
     color: blue;
   }
@@ -67,13 +76,11 @@ const Logo = styled(Link)`
   text-decoration: none;
   font-weight: bold;
   color: white;
-  margin-right: 2rem;
   display: flex;
-  justify-content: center;
   align-items: center;
-
-  @media (max-width: 768px) {
-    margin-bottom: 1rem;
+  justify-content: center;
+  @media (min-width: 768px) {
+    margin-left: 2.5em;
   }
 `;
 
@@ -87,12 +94,14 @@ const MenuButton = styled.button`
 
   @media (max-width: 768px) {
     display: block;
+    margin-top: 0.5em;
   }
 `;
 
 const Menu = styled.div`
   display: flex;
   gap: 2rem;
+  margin-right: 2.5em;
 
   @media (max-width: 768px) {
     flex-direction: column;
