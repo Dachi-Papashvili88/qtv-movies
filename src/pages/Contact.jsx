@@ -68,6 +68,11 @@ const Wrapper = styled.section`
       gap: 3em;
     }
   }
+  .social-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export default Contact;
