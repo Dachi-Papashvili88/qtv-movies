@@ -30,8 +30,7 @@ const Navbar = () => {
 };
 
 const NavbarContainer = styled.nav`
-  background-color: var(--clr-header);
-  color: white;
+  background-color: var(--clr-primary-default);
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -55,20 +54,19 @@ const NavbarContainer = styled.nav`
   }
 
   a {
-    color: white;
+    color: var(--be-text);
     text-decoration: none;
   }
 
   .logos-text {
     hover: none;
     text-decoration: none;
-    color: white;
+    color: var(--be-text);
     margin-left: 0.6em;
     margin-top: 0.65em;
   }
 
   a:hover {
-    color: #ffffff;
     border-bottom: 1.5px solid white;
   }
 `;

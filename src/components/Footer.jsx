@@ -10,7 +10,7 @@ const Footer = () => {
     )
 }
 const Wrapper = styled.div `
-background-color: var(--clr-footer);
+background-color: var(--clr-primary-lighter);
 height: 100px;
 color: #dce1de;
 display: flex;

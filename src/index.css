@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
-
 /*
 =============== 
 Variables
@@ -8,11 +7,20 @@ Variables
 */
 
 body {
-   background-color: #edf2f4;
-   margin: 0;
+  background-color: #edf2f4;
+  margin: 0;
 }
 
 :root {
-   --clr-header: #023e8a;
-   --clr-footer: #051923;
+  --clr-primary-default: #242424;
+  --clr-primary-lighter: #333333;
+  --clr-primary-darker: #1e1e1e;
+  --be-background: #1D1D1E;
+  --be-text: #fff;
+  --be-link: #c5cae9;
+  --be-hover: rgba(255, 255, 255, 0.04)
+}
+
+.icon {
+   color: var(--clr-primary-darker)
 }
