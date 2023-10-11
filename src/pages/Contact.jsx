@@ -39,6 +39,7 @@ const Contact = () => {
 const Wrapper = styled.section`
   .section {
     text-align: center;
+    color: var(--be-text);
   }
   .contact {
     display: flex;
@@ -46,14 +47,15 @@ const Wrapper = styled.section`
     justify-content: center;
     align-items: center;
     margin-top: 2em;
-    background-color: #ffffff;
+    background-color: var(--clr-primary-lighter);
+    color: var(--be-text);
     padding: 1em;
     border-radius: 5px;
-    box-shadow: 0px 3px 10px 0px rgba(11, 11, 77, 0.14);
+    box-shadow: 0px 3px 10px 0px (#616161);
   }
 
   .contact:hover {
-    box-shadow: 0px 2px 70px 0px rgba(11, 11, 77, 0.14);
+    box-shadow: 1px 3px 70px 0px (#616124);
   }
 
   @media (min-width: 768px) {
@@ -72,6 +74,7 @@ const Wrapper = styled.section`
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: var(--be-text);
   }
 `;
 

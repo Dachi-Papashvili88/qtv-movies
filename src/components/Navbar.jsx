@@ -30,7 +30,7 @@ const Navbar = () => {
 };
 
 const NavbarContainer = styled.nav`
-  background-color: var(--clr-primary-default);
+  background-color: var(--clr-primary-darker);
   padding: 1rem;
   display: flex;
   justify-content: space-between;
@@ -101,6 +101,8 @@ const Menu = styled.div`
   display: flex;
   gap: 2rem;
   margin-right: 2.5em;
+  color: var(--be-text);
+
 
   @media (max-width: 768px) {
     flex-direction: column;
