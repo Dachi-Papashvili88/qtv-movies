@@ -17,7 +17,7 @@ const Navbar = () => {
         <h3 className="logos-text">ქრისტიანული ფილმები</h3>
       </Logo>
       <MenuButton onClick={toggleMenu}>
-        {menuOpen ? <FaTimes /> : <FaBars />} {/* Use React Icons here */}
+        {menuOpen ? <FaTimes /> : <FaBars />}
       </MenuButton>
       <Menu open={menuOpen} className="menu">
         <Link to="/">მთავარი</Link>
@@ -47,6 +47,7 @@ const NavbarContainer = styled.nav`
   .logo-img {
     height: 2.5em;
     border-radius: 3px;
+
   }
 
   h1 {
@@ -64,10 +65,6 @@ const NavbarContainer = styled.nav`
     color: var(--be-text);
     margin-left: 0.6em;
     margin-top: 0.65em;
-  }
-
-  a:hover {
-    border-bottom: 1.5px solid white;
   }
 `;
 
@@ -88,6 +85,8 @@ const MenuButton = styled.button`
   border: none;
   cursor: pointer;
   font-size: 1.5rem;
+  font-weight: normal;
+
   color: white;
   display: none;
 
@@ -102,7 +101,9 @@ const Menu = styled.div`
   gap: 2rem;
   margin-right: 2.5em;
   color: var(--be-text);
-
+   :hover {
+    border-bottom: 1.5px solid white;
+  }
 
   @media (max-width: 768px) {
     flex-direction: column;

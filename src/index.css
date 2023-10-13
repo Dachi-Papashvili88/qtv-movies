@@ -1,5 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Georgian:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 /*
 =============== 
 Variables
@@ -8,7 +6,9 @@ Variables
 
 body {
   background-color: var(--clr-primary-default);
+  color: var(--be-text);
   margin: 0;
+  font-family: "Noto Sans Georgian", sans-serif;
 }
 
 :root {

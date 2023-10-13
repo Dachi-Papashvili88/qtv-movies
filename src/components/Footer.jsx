@@ -12,7 +12,8 @@ const Footer = () => {
 const Wrapper = styled.div `
 background-color: var(--clr-primary-lighter);
 height: 100px;
-color: #dce1de;
+color: var(--be-text);
+font-size: 0.9rem;
 display: flex;
 justify-content: center;
 align-items: center;
