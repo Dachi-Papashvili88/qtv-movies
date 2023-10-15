@@ -3,12 +3,13 @@
 Variables
 ===============
 */
+@import url("//cdn.web-fonts.ge/fonts/bpg-le-studio-02-caps/css/bpg-le-studio-02-caps.min.css");
+@import url("//cdn.web-fonts.ge/fonts/bpg-le-studio-02/css/bpg-le-studio-02.min.css");
 
 body {
   background-color: var(--clr-primary-default);
   color: var(--be-text);
   margin: 0;
-  font-family: "Noto Sans Georgian", sans-serif;
 }
 
 :root {
@@ -24,6 +25,8 @@ body {
   --be-text: #fff;
   --be-link: #c5cae9;
   --be-hover: rgba(255, 255, 255, 0.04);
+  --uppercase-font: "BPG LE Studio 02 Caps", sans-serif;
+  --lowercase-font: "BPG LE Studio 02", sans-serif;
 }
 
 .icon {

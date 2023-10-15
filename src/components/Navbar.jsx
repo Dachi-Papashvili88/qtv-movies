@@ -35,6 +35,7 @@ const NavbarContainer = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: var(--uppercase-font);
 
   @media (max-width: 768px) {
     align-items: flex-start;
@@ -47,7 +48,6 @@ const NavbarContainer = styled.nav`
   .logo-img {
     height: 2.5em;
     border-radius: 3px;
-
   }
 
   h1 {
@@ -101,7 +101,7 @@ const Menu = styled.div`
   gap: 2rem;
   margin-right: 2.5em;
   color: var(--be-text);
-   :hover {
+  :hover {
     border-bottom: 1.5px solid white;
   }
 
