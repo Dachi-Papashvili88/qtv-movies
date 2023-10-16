@@ -105,11 +105,19 @@ const Menu = styled.div`
   color: var(--be-text);
    padding: 6px;
     border-radius: 4px;
-  :hover {
-    border-bottom: 1.5px solid white;
-  }
-  .active {
-    background-color: var(--clr-active);
+ 
+
+
+  @media(min-width:768px){
+    .active {
+      background-color: var(--clr-active);
+      transition: 0.2s;
+
+    }
+    :hover {
+      text-decoration: underline;
+      transition: 0.5s;
+    }
   }
 
   @media (max-width: 768px) {
@@ -117,11 +125,15 @@ const Menu = styled.div`
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #333;
+    background-color: var(--clr-primary-lighter);
     width: 100%;
     padding: 1rem;
     display: ${({ open }) => (open ? "flex" : "none")};
     transition: display 0.3s ease-in-out;
+    :hover{
+      margin-left: 0.5rem;
+      transition: 0.3s;
+    }
   }
 `;
 
