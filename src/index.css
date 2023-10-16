@@ -16,6 +16,7 @@ body {
   --clr-primary-default: #242424;
   --clr-primary-lighter: #333333;
   --clr-primary-darker: #1e1e1e;
+  --clr-active: #9e2a2b; 
   --be-accent-default: rgba(36, 186, 239, 1);
   --be-accent-lighter: rgba(129, 210, 239, 1);
   --be-accent-contrast: rgba(255, 255, 255, 1);

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const Navbar = () => {
@@ -20,10 +20,10 @@ const Navbar = () => {
         {menuOpen ? <FaTimes /> : <FaBars />}
       </MenuButton>
       <Menu open={menuOpen} className="menu">
-        <Link to="/">მთავარი</Link>
-        <Link to="movies">ფილმები</Link>
-        <Link to="animations">ანიმაციები</Link>
-        <Link to="contact">კონტაქტი</Link>
+        <NavLink to="/">მთავარი</NavLink>
+        <NavLink to="movies">ფილმები</NavLink>
+        <NavLink to="animations">ანიმაციები</NavLink>
+        <NavLink to="contact">კონტაქტი</NavLink>
       </Menu>
     </NavbarContainer>
   );
@@ -57,6 +57,8 @@ const NavbarContainer = styled.nav`
   a {
     color: var(--be-text);
     text-decoration: none;
+    padding: 6px;
+    border-radius: 4px;
   }
 
   .logos-text {
@@ -68,7 +70,7 @@ const NavbarContainer = styled.nav`
   }
 `;
 
-const Logo = styled(Link)`
+const Logo = styled(NavLink)`
   text-decoration: none;
   font-weight: bold;
   color: white;
@@ -101,8 +103,13 @@ const Menu = styled.div`
   gap: 2rem;
   margin-right: 2.5em;
   color: var(--be-text);
+   padding: 6px;
+    border-radius: 4px;
   :hover {
     border-bottom: 1.5px solid white;
+  }
+  .active {
+    background-color: var(--clr-active);
   }
 
   @media (max-width: 768px) {
