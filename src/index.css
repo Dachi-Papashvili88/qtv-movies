@@ -10,6 +10,7 @@ body {
   background-color: var(--clr-primary-default);
   color: var(--be-text);
   margin: 0;
+  font-family: "BPG LE Studio 02", sans-serif;
 }
 
 :root {
@@ -27,7 +28,7 @@ body {
   --be-link: #c5cae9;
   --be-hover: rgba(255, 255, 255, 0.04);
   --uppercase-font: "BPG LE Studio 02 Caps", sans-serif;
-  --lowercase-font: "BPG LE Studio 02", sans-serif;
+  
 }
 
 .icon {

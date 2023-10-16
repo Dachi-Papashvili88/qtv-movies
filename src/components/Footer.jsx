@@ -11,7 +11,6 @@ const Footer = () => {
 }
 const Wrapper = styled.div `
 background-color: var(--clr-primary-lighter);
-font-family: var(--lowercase-font);
 height: 100px;
 color: var(--be-text);
 font-size: 0.9rem;
