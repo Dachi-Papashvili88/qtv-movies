@@ -2,6 +2,10 @@ import { useState } from "react";
 import styled from "styled-components";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { RiMovieLine } from "react-icons/ri";
+import {AiOutlineHome} from "react-icons/ai"
+import {TbBrandYoutubeKids} from "react-icons/tb"
+import {LuContact} from "react-icons/lu"
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -20,10 +24,10 @@ const Navbar = () => {
         {menuOpen ? <FaTimes /> : <FaBars />}
       </MenuButton>
       <Menu open={menuOpen} className="menu">
-        <NavLink to="/">მთავარი</NavLink>
-        <NavLink to="movies">ფილმები</NavLink>
-        <NavLink to="animations">ანიმაციები</NavLink>
-        <NavLink to="contact">კონტაქტი</NavLink>
+        <NavLink to="/"> <AiOutlineHome /> მთავარი</NavLink>
+        <NavLink to="movies"><RiMovieLine/> ფილმები</NavLink>
+        <NavLink to="animations"><TbBrandYoutubeKids /> ანიმაციები</NavLink>
+        <NavLink to="contact"><LuContact /> კონტაქტი</NavLink>
       </Menu>
     </NavbarContainer>
   );
@@ -103,16 +107,13 @@ const Menu = styled.div`
   gap: 2rem;
   margin-right: 2.5em;
   color: var(--be-text);
-   padding: 6px;
-    border-radius: 4px;
- 
+  padding: 6px;
+  border-radius: 4px;
 
-
-  @media(min-width:768px){
+  @media (min-width: 768px) {
     .active {
       background-color: var(--clr-active);
       transition: 0.2s;
-
     }
     :hover {
       text-decoration: underline;
@@ -130,7 +131,7 @@ const Menu = styled.div`
     padding: 1rem;
     display: ${({ open }) => (open ? "flex" : "none")};
     transition: display 0.3s ease-in-out;
-    :hover{
+    :hover {
       margin-left: 0.5rem;
       transition: 0.3s;
     }
