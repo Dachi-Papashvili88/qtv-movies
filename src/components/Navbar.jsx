@@ -24,8 +24,8 @@ const Navbar = () => {
         {menuOpen ? <FaTimes /> : <FaBars />}
       </MenuButton>
       <Menu open={menuOpen} className="menu">
-        <NavLink to="/"> <AiOutlineHome /> მთავარი</NavLink>
         <NavLink to="movies"><RiMovieLine/> ფილმები</NavLink>
+        <NavLink to="series"> <AiOutlineHome /> სერიალები</NavLink>
         <NavLink to="animations"><TbBrandYoutubeKids /> ანიმაციები</NavLink>
         <NavLink to="contact"><LuContact /> კონტაქტი</NavLink>
       </Menu>
@@ -52,7 +52,12 @@ const NavbarContainer = styled.nav`
   .logo-img {
     height: 2.5em;
     border-radius: 3px;
+    margin-left: -2.5em;
+    @media(max-width:768px){
+      margin-left: -1em;
+    }
   }
+
 
   h1 {
     margin-left: 0.5em;
@@ -92,7 +97,6 @@ const MenuButton = styled.button`
   cursor: pointer;
   font-size: 1.5rem;
   font-weight: normal;
-
   color: white;
   display: none;
 
@@ -124,6 +128,7 @@ const Menu = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
     position: absolute;
+    gap: 1.2rem;
     top: 100%;
     left: 0;
     background-color: var(--clr-primary-lighter);
