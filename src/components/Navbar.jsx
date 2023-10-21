@@ -24,10 +24,10 @@ const Navbar = () => {
         {menuOpen ? <FaTimes /> : <FaBars />}
       </MenuButton>
       <Menu open={menuOpen} className="menu">
-        <NavLink to="movies"><RiMovieLine/> ფილმები</NavLink>
-        <NavLink to="series"> <AiOutlineHome /> სერიალები</NavLink>
-        <NavLink to="animations"><TbBrandYoutubeKids /> ანიმაციები</NavLink>
-        <NavLink to="contact"><LuContact /> კონტაქტი</NavLink>
+        <NavLink to="movies" onClick={toggleMenu}><RiMovieLine/> ფილმები</NavLink>
+        <NavLink to="series" onClick={toggleMenu}> <AiOutlineHome /> სერიალები</NavLink>
+        <NavLink to="animations" onClick={toggleMenu}><TbBrandYoutubeKids /> ანიმაციები</NavLink>
+        <NavLink to="contact" onClick={toggleMenu}><LuContact /> კონტაქტი</NavLink>
       </Menu>
     </NavbarContainer>
   );
