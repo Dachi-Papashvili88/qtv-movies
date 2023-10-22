@@ -28,6 +28,8 @@ const Navbar = () => {
         <NavLink to="series" onClick={toggleMenu}> <AiOutlineHome /> სერიალები</NavLink>
         <NavLink to="animations" onClick={toggleMenu}><TbBrandYoutubeKids /> ანიმაციები</NavLink>
         <NavLink to="contact" onClick={toggleMenu}><LuContact /> კონტაქტი</NavLink>
+        <NavLink to="login" onClick={toggleMenu}>Signin</NavLink>
+        <NavLink to="signup" onClick={toggleMenu}>Signup</NavLink>
       </Menu>
     </NavbarContainer>
   );
