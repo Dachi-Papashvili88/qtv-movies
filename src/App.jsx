@@ -6,9 +6,11 @@ import Contact from "./pages/Contact";
 import "./index.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import { AuthContextProvider } from "./context/AuthContext";
 
 function App() {
   return (
+    <AuthContextProvider>
     <Router>
       <Navbar />
       <Routes>
@@ -19,6 +21,8 @@ function App() {
       </Routes>
       <Footer />
     </Router>
+    </AuthContextProvider>
+
   );
 }
 
