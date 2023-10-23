@@ -48,7 +48,7 @@ const Navbar = () => {
                <button onClick={handleLogout}>Logout</button>
                </div>
             ) : (
-              <div>
+              <div className="profile">
               <Link to="/login" onClick={toggleMenu}>Sign In</Link>
               <Link to="/signup" onClick={toggleMenu}>Sign Up</Link>
               </div>
@@ -166,6 +166,16 @@ const Menu = styled.div`
       transition: 0.3s;
     }
   }
+  .profile {
+    display: flex;
+    gap: 10px;
+    @media(min-width: 768px){
+      position: relative;
+      left: 30px;
+      font-size: 0.9rem;
+    }
+  }
+  
 `;
 
 export default Navbar;

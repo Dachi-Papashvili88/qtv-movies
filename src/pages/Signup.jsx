@@ -40,7 +40,7 @@ const Signup = () => {
                 placeholder="Password"
                 autoComplete="current-password"
               />
-              <button>Sign Up</button>
+              <button className="signup-btn">Sign Up</button>
               <div className="checkbox-container">
                 <p>
                   <input type="checkbox" />
@@ -114,6 +114,10 @@ const SignupWrapper = styled.nav`
       align-items: center;
       font-size: 0.7rem;
 
+    }
+
+    .signup-btn {
+      
     }
     
   }
