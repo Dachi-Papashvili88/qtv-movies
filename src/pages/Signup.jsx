@@ -107,7 +107,7 @@ const SignupWrapper = styled.div`
   form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 298px;
   }
 
   .checkbox-container {

@@ -3,8 +3,7 @@ import styled from "styled-components";
 import { NavLink, useNavigate, Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { RiMovieLine } from "react-icons/ri";
-import {AiOutlineHome} from "react-icons/ai"
-import {TbBrandYoutubeKids} from "react-icons/tb"
+import {TbBrandYoutubeKids, TbMovie} from "react-icons/tb"
 import {LuContact} from "react-icons/lu"
 import { UserAuth } from "../context/AuthContext";
 
@@ -40,7 +39,7 @@ const Navbar = () => {
       </MenuButton>
       <Menu open={menuOpen} className="menu">
         <NavLink to="/movies" onClick={toggleMenu}><RiMovieLine/> ფილმები</NavLink>
-        <NavLink to="/series" onClick={toggleMenu}> <AiOutlineHome /> სერიალები</NavLink>
+        <NavLink to="/series" onClick={toggleMenu}><TbMovie /> სერიალები</NavLink>
         <NavLink to="/animations" onClick={toggleMenu}><TbBrandYoutubeKids /> ანიმაციები</NavLink>
         <NavLink to="/contact" onClick={toggleMenu}><LuContact /> კონტაქტი</NavLink>
             {user?.email ? (
