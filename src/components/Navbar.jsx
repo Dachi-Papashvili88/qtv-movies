@@ -9,6 +9,7 @@ import {LuContact} from "react-icons/lu"
 import { UserAuth } from "../context/AuthContext";
 
 
+
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const {user, logOut} = UserAuth()
@@ -145,17 +146,20 @@ const Menu = styled.div`
       transition: 0.2s;
     }
     :hover {
-      text-decoration: underline;
-      transition: 0.5s;
+        color: red;
+        transition: all 1s ease-out;
+        border-radius: 2px;
     }
   }
 
   @media (max-width: 768px) {
     flex-direction: column;
+    align-items: center;
     position: absolute;
     gap: 1.2rem;
     top: 100%;
     left: 0;
+    font-size: 1.1rem;
     background-color: var(--clr-primary-lighter);
     width: 100%;
     padding: 1rem;
