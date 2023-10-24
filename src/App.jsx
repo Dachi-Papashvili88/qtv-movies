@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Series from "./pages/Series";
 import Movies from "./pages/Movies";
 import Animations from "./pages/Animations";
-import Contact from "./pages/Contact";
+import Documentary from "./pages/Documentary";
 import Login from "./pages/Login";
 import Signup from "./pages/Signup";
 import Account from "./pages/Account";
@@ -21,7 +21,7 @@ function App() {
           <Route path="/movies" element={<Movies />} />
           <Route path="/series" index element={<Series />} />
           <Route path="/animations" element={<Animations />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/documentary" element={<Documentary />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route

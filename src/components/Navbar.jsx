@@ -2,23 +2,20 @@ import { useState } from "react";
 import styled from "styled-components";
 import { NavLink, useNavigate, Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { RiMovieLine } from "react-icons/ri";
-import {TbBrandYoutubeKids, TbMovie} from "react-icons/tb"
-import {LuContact} from "react-icons/lu"
+import { RiMovieLine, RiMovie2Line } from "react-icons/ri";
+import { TbBrandYoutubeKids, TbMovie } from "react-icons/tb";
+import { BiLogIn } from "react-icons/bi";
 import { UserAuth } from "../context/AuthContext";
-
-
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-  const {user, logOut} = UserAuth()
-  const navigate = useNavigate()
-
+  const { user, logOut } = UserAuth();
+  const navigate = useNavigate();
 
   const handleLogout = async () => {
     try {
       await logOut();
-      navigate('/');
+      navigate("/");
     } catch (error) {
       console.log(error);
     }
@@ -38,21 +35,33 @@ const Navbar = () => {
         {menuOpen ? <FaTimes /> : <FaBars />}
       </MenuButton>
       <Menu open={menuOpen} className="menu">
-        <NavLink to="/movies" onClick={toggleMenu}><RiMovieLine/> ფილმები</NavLink>
-        <NavLink to="/series" onClick={toggleMenu}><TbMovie /> სერიალები</NavLink>
-        <NavLink to="/animations" onClick={toggleMenu}><TbBrandYoutubeKids /> ანიმაციები</NavLink>
-        <NavLink to="/contact" onClick={toggleMenu}><LuContact /> კონტაქტი</NavLink>
-            {user?.email ? (
-              <div>
-               <NavLink to="/account" onClick={toggleMenu}>Account</NavLink>
-               <button onClick={handleLogout}>Logout</button>
-               </div>
-            ) : (
-              <div className="profile">
-              <Link to="/login" onClick={toggleMenu}>Sign In</Link>
-              <Link to="/signup" onClick={toggleMenu}>Sign Up</Link>
-              </div>
-            )}
+        <NavLink to="/movies" onClick={toggleMenu}>
+          <RiMovieLine /> ფილმები
+        </NavLink>
+        <NavLink to="/series" onClick={toggleMenu}>
+          <TbMovie /> სერიალები
+        </NavLink>
+        <NavLink to="/animations" onClick={toggleMenu}>
+          <TbBrandYoutubeKids /> ანიმაციები
+        </NavLink>
+        <NavLink to="/documentary" onClick={toggleMenu}>
+          <RiMovie2Line /> დოკუმენტური
+        </NavLink>
+        {user?.email ? (
+          <div>
+            <NavLink to="/account" onClick={toggleMenu}>
+              Account
+            </NavLink>
+            <button onClick={handleLogout}>Logout</button>
+          </div>
+        ) : (
+          <div className="profile">
+            <Link className="profile-link" to="/login" onClick={toggleMenu}>
+              <BiLogIn /> შესვლა
+            </Link>
+            {/*<Link to="/signup" onClick={toggleMenu}>Sign Up</Link>*/}
+          </div>
+        )}
       </Menu>
     </NavbarContainer>
   );
@@ -78,11 +87,10 @@ const NavbarContainer = styled.nav`
     height: 2.5em;
     border-radius: 3px;
     margin-left: -2.5em;
-    @media(max-width:768px){
+    @media (max-width: 768px) {
       margin-left: -1em;
     }
   }
-
 
   h1 {
     margin-left: 0.5em;
@@ -145,9 +153,9 @@ const Menu = styled.div`
       transition: 0.2s;
     }
     :hover {
-        color: red;
-        transition: all 1s ease-out;
-        border-radius: 2px;
+      color: red;
+      transition: all 1s ease-out;
+      border-radius: 2px;
     }
   }
 
@@ -169,20 +177,18 @@ const Menu = styled.div`
       border-bottom: 3px solid #9e2a2b;
       border-radius: 1.5px;
       transition: 0.1s;
-
     }
   }
-  
+
   .profile {
     display: flex;
     gap: 10px;
-    @media(min-width: 768px){
+    @media (min-width: 768px) {
       position: relative;
       left: 30px;
       font-size: 0.9rem;
     }
   }
-  
 `;
 
 export default Navbar;
