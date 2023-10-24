@@ -161,8 +161,6 @@ const Menu = styled.div`
 
   @media (max-width: 768px) {
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     position: absolute;
     gap: 1.2rem;
     top: 100%;
@@ -174,8 +172,7 @@ const Menu = styled.div`
     display: ${({ open }) => (open ? "flex" : "none")};
     transition: display 0.3s ease-in-out;
     :hover {
-      border-bottom: 3px solid #9e2a2b;
-      border-radius: 1.5px;
+      margin-left: 1rem;
       transition: 0.1s;
     }
   }

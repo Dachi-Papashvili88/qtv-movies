@@ -29,7 +29,7 @@ const Login = () => {
         <div className="container">
           <div className="content-container">
             <div className="form-container">
-              <h1>Sign In</h1>
+              <h1>შესვლა</h1>
               {error ? <p>{error}</p> : null}
               <form onSubmit={handleSubmit} className="form">
                 <input
@@ -44,16 +44,15 @@ const Login = () => {
                   placeholder="Password"
                   autoComplete="current-password"
                 />
-                <button className="signin-btn">Sign In</button>
+                <button className="signin-btn">შესვლა</button>
                 <div className="checkbox-container">
                   <p>
                     <input type="checkbox" />
-                    Remember me
+                    დამახსოვრება
                   </p>
-                  <p>Need Help?</p>
                 </div>
                 <p className="span-section">
-                  <span>New to Netflix?</span> <Link to="/signup">Sign Up</Link>
+                  <span>არ გაქვთ ანგარიში?</span> <Link to="/signup">რეგისტრაცია</Link>
                 </p>
               </form>
             </div>
@@ -67,6 +66,7 @@ const Login = () => {
 export default Login;
 
 const SignInWrapper = styled.div`
+  font-family: "BPG LE Studio 02", sans-serif;
   .cover-image {
     background-image: url(https://assets.nflxext.com/ffe/siteui/vlv3/f841d4c7-10e1-40af-bcae-07a3f8dc141a/f6d7434e-d6de-4185-a6d4-c77a2d08737b/US-en-20220502-popsignuptwoweeks-perspective_alpha_website_medium.jpg);
     background-repeat: no-repeat;
@@ -113,7 +113,6 @@ const SignInWrapper = styled.div`
 
   .checkbox-container {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     font-size: 0.7rem;
   }
@@ -145,6 +144,9 @@ const SignInWrapper = styled.div`
   .span-section{
     font-size: 0.9rem;
     color: var(--be-text);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     a {
       color: var(--clr-active);
       font-weight: bold;
