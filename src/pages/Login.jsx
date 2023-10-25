@@ -136,7 +136,8 @@ const SignInWrapper = styled.div`
     border: none;
     border-radius: 5px;
     color: var(--be-text);
-    font-size: 1rem;
+    font-family: var(--uppercase-font);
+    font-size: 0.9rem;
     font-weight: bold;
     cursor: pointer;
   }
