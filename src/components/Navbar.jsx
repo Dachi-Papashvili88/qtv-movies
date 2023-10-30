@@ -6,6 +6,7 @@ import { RiMovieLine, RiMovie2Line } from "react-icons/ri";
 import { TbBrandYoutubeKids, TbMovie } from "react-icons/tb";
 import { BiLogIn } from "react-icons/bi";
 import { UserAuth } from "../context/AuthContext";
+import Search from "./Search";
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,6 +32,7 @@ const Navbar = () => {
         <img className="logo-img" src="QTV Logo.svg" alt="საიტის ლოგო" />
         <h3 className="logos-text">ქრისტიანული ფილმები</h3>
       </Logo>
+      <Search />
       <MenuButton onClick={toggleMenu}>
         {menuOpen ? <FaTimes /> : <FaBars />}
       </MenuButton>
@@ -173,7 +175,7 @@ const Menu = styled.div`
     transition: display 0.3s ease-in-out;
     :hover {
       margin-left: 1rem;
-      transition: 0.1s;
+      transition: 0.7s;
     }
   }
 
