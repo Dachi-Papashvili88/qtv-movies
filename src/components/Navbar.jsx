@@ -5,6 +5,7 @@ import { FaBars, FaTimes } from "react-icons/fa";
 import { RiMovieLine, RiMovie2Line } from "react-icons/ri";
 import { TbBrandYoutubeKids, TbMovie } from "react-icons/tb";
 import { BiLogIn } from "react-icons/bi";
+import { MdAccountCircle } from "react-icons/md";
 import { UserAuth } from "../context/AuthContext";
 import Search from "./Search";
 
@@ -50,11 +51,11 @@ const Navbar = () => {
           <RiMovie2Line /> დოკუმენტური
         </NavLink>
         {user?.email ? (
-          <div>
-            <NavLink to="/account" onClick={toggleMenu}>
-              Account
+          <div className="personal-account">
+            <NavLink className="account" to="/account" onClick={toggleMenu}>
+              <MdAccountCircle/>
             </NavLink>
-            <button onClick={handleLogout}>Logout</button>
+            <button onClick={handleLogout}>გამოსვლა</button>
           </div>
         ) : (
           <div className="profile">
@@ -187,6 +188,33 @@ const Menu = styled.div`
       left: 30px;
       font-size: 0.9rem;
     }
+  }
+  
+  .personal-account {
+    display: flex;
+    align-items: center;
+  }
+
+  .account {
+    font-size: 1.2rem;
+    pading: 0;
+    :hover {
+      color: none;
+    }
+  }
+  .account:active {
+    padding: 0;
+  }
+
+  button {
+    font-size: 0.7rem;
+    font-family: var(--uppercase-font);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  button:hover {
+    cursor: pointer;
   }
 `;
 

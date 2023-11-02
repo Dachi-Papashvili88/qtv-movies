@@ -1,4 +1,3 @@
-
 const Account = () => {
   return (
     <div>

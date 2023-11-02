@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Main from "./pages/Main";
 import Series from "./pages/Series";
 import Movies from "./pages/Movies";
 import Animations from "./pages/Animations";
@@ -18,6 +19,7 @@ function App() {
       <Router>
         <Navbar />
         <Routes>
+          <Route path="/" element={<Main />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/series" index element={<Series />} />
           <Route path="/animations" element={<Animations />} />
