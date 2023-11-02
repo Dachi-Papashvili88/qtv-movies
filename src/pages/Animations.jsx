@@ -1,6 +1,16 @@
+import movies from "../../moviesData.json"; // Importing JSON data
+
 const Animations = () => {
     return (
-        <h1>Animations Page</h1>
+        <ul>
+
+        {movies.map((movie) => (
+          <li key={movie.id}>
+            {movie.title} ({movie.year})
+            <img src={movie.src} />
+          </li>
+        ))}
+      </ul>
     )
 }
 

@@ -1,18 +1,32 @@
 [
   {
     "id": 1,
-    "title": "Movie 1",
+    "title": "იესო",
     "director": "Director 1",
     "year": 2023,
     "genre": "Action",
-    "videoUrl": "/movie1.mp4"
+    "videoUrl": "/movie1.mp4",
+    "src": "./images/jesus.jpg"
+
   },
   {
     "id": 2,
-    "title": "Movie 2",
+    "title": "გატეხილი",
     "director": "Director 2",
     "year": 2022,
     "genre": "Comedy",
-    "videoUrl": "/movie2.mp4"
+    "videoUrl": "/movie2.mp4", 
+    "src": "./images/broken.jpg"
+
+  }, 
+  {
+    "id": 3,
+    "title": "ვარსკვლავი",
+    "director": "Director 2",
+    "year": 2022,
+    "genre": "Comedy",
+    "videoUrl": "/movie2.mp4", 
+    "src": "./images/The Star.jpg"
+
   }
 ]
