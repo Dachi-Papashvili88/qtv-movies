@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "title": "პილიგრიმის მოგზაურობა",
+    "director": "Director 1",
+    "year": 2023,
+    "genre": "Action",
+    "videoUrl": "/movie1.mp4",
+    "src": "./posters/piligrim progress.jpg"
+
+  },
+  {
+    "id": 2,
+    "title": "ვარსკვლავი",
+    "director": "Director 2",
+    "year": 2022,
+    "genre": "Comedy",
+    "videoUrl": "/movie2.mp4", 
+    "src": "./posters/The Star.jpg"
+
+  }
+]
