@@ -1,21 +1,13 @@
 import movies from "../../moviesData.json"; // Importing JSON data
 import styled from "styled-components";
-import { AiOutlinePlayCircle } from "react-icons/ai";
 
 const Movies = () => {
   return (
     <Wrapper>
-      <h1>Movie List</h1>
       <ul>
-      <AiOutlinePlayCircle className="icon"/>
-
         {movies.map((movie) => (
           <li key={movie.id}>
-            {movie.title} ({movie.year})
-            <video controls>
-              <source src={movie.videoUrl} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
+            <img src={movie.src} />
           </li>
         ))}
       </ul>
@@ -26,18 +18,36 @@ const Movies = () => {
 export default Movies;
 
 const Wrapper = styled.div`
-  video {
-    width: 100%;
-    margin: 20px auto;
+  ul {
+    display: grid;
+    gap: 20px;
+    max-width: 1400px;
+    @media (max-width: 768px) {
+      grid-template-columns: repeat(3, auto);
+    }
+ 
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(5, auto);
+    }
   }
-  .icon {
-    position: absolute;
-  top: 90%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    width: 100px;
-    height: 100px;
-    color: red;
 
+  li {
+    list-style-type: none;
+    :hover {
+      cursor: pointer;
+      opacity: 0.8;
+      transition: 0.7s;
+    }
+  }
+
+  img {
+    border-radius: 5px;
+    margin-bottom: 20px;
+    @media (max-width: 768px) {
+      width: 95%;
+    }
+    @media (min-width: 768px) {
+      width: 80%;
+    }
   }
 `;

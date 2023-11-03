@@ -1,12 +1,12 @@
 [
   {
     "id": 1,
-    "title": "იესო",
+    "title": "გასაოცარი სიყვარული",
     "director": "Director 1",
     "year": 2023,
     "genre": "Action",
     "videoUrl": "/movie1.mp4",
-    "src": "./images/jesus.jpg"
+    "src": "./posters/amazing love.png"
 
   },
   {
@@ -16,7 +16,7 @@
     "year": 2022,
     "genre": "Comedy",
     "videoUrl": "/movie2.mp4", 
-    "src": "./images/broken.jpg"
+    "src": "./posters/broken.jpg"
 
   }, 
   {
@@ -26,7 +26,51 @@
     "year": 2022,
     "genre": "Comedy",
     "videoUrl": "/movie2.mp4", 
-    "src": "./images/The Star.jpg"
-
+    "src": "./posters/jesus.jpg"
+  }, 
+   {
+    "id": 3,
+    "title": "ღმერთი არ არის მკვდარი",
+    "director": "Director 2",
+    "year": 2022,
+    "genre": "Comedy",
+    "videoUrl": "/movie2.mp4", 
+    "src": "./posters/god's not dead1.jpg"
+  }, 
+   {
+    "id": 4,
+    "title": "ღმერთი არ არის მკვდარი 2",
+    "director": "Director 2",
+    "year": 2022,
+    "genre": "Comedy",
+    "videoUrl": "/movie2.mp4", 
+    "src": "./posters/god's not dead2.jpg"
+  }, 
+  {
+    "id": 3,
+    "title": "ქრისტეს ვნებანი",
+    "director": "Director 2",
+    "year": 2022,
+    "genre": "Comedy",
+    "videoUrl": "/movie2.mp4", 
+    "src": "./posters/god's not dead1.jpg"
+  }, 
+  {
+    "id": 3,
+    "title": "აღმდგარი",
+    "director": "Director 2",
+    "year": 2022,
+    "genre": "Comedy",
+    "videoUrl": "/movie2.mp4", 
+    "src": "./posters/risen.jpg"
+  }, 
+  {
+    "id": 3,
+    "title": "ომის ოთახი",
+    "director": "Director 2",
+    "year": 2022,
+    "genre": "Comedy",
+    "videoUrl": "/movie2.mp4", 
+    "src": "./posters/war room.jpg"
   }
 ]
