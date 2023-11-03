@@ -45,7 +45,7 @@ img {
   margin-bottom: 20px;
   @media (max-width: 768px) {
     width: 95%;
-    height: 70vh;
+    height: 280px;
   }
   @media (min-width: 768px) {
     width: 80%;

@@ -149,6 +149,7 @@ const Menu = styled.div`
   color: var(--be-text);
   padding: 6px;
   border-radius: 4px;
+  z-index: 4;
 
   @media (min-width: 768px) {
     .active {
