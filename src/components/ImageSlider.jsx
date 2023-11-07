@@ -58,10 +58,10 @@ const Wrapper = styled.section `
 
 .slide {
   width: 100%;
-  height: 60vh;
+  height: 70vh;
   border-radius: 10px;
   background-size: contain;
-background-repeat: no-repeat;
+  background-repeat: no-repeat;
   background-position: center;
 }
 
