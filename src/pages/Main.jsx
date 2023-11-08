@@ -1,4 +1,5 @@
 import ImageSlider from "../components/ImageSlider";
+import Row from "../components/Row";
 const Main = () => {
   const slides = [
     { url: "./images/broken.jpg", title: "beach" },
@@ -17,6 +18,7 @@ const Main = () => {
       <div style={containerStyles}>
         <ImageSlider slides={slides} />
       </div>
+      <Row/>
     </div>
   );
 };
