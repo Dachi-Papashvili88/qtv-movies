@@ -1,9 +1,15 @@
-import Movies from "../pages/Movies"
+import Movies from "../../moviesData.json";
+
 const Row = () => {
     return (
-        <>
-        </>
-    )
-}
-
-export default Row 
+      <div>
+        {movies.map((movie) => (
+          <li key={movie.id}>
+            <img src={movie.src} alt={movie.title} />
+          </li>
+        ))}
+      </div>
+    );
+  };
+  
+  export default Row;

@@ -1,10 +1,11 @@
 import ImageSlider from "../components/ImageSlider";
 import Row from "../components/Row";
+
 const Main = () => {
   const slides = [
     { url: "./images/broken.jpg", title: "beach" },
     { url: "./images/jesus.jpg", title: "boat" },
-    { url: "./images/The Star.jpg", title: "forest" },
+    { url: "./images/star.jpg", title: "forest" },
     { url: "./images/god's not dead1.jpg", title: "city" },
     { url: "./images/god's not dead1.jpg.jpg", title: "italy" }
   ];
@@ -18,7 +19,6 @@ const Main = () => {
       <div style={containerStyles}>
         <ImageSlider slides={slides} />
       </div>
-      <Row/>
     </div>
   );
 };
