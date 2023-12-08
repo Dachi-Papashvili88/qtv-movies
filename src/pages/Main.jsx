@@ -1,5 +1,6 @@
 import ImageSlider from "../components/ImageSlider";
 import Movies from "./Movies"; // Import the Movies component
+import Animations from "./Animations";
 
 const Main = () => {
   const slides = [
@@ -20,6 +21,7 @@ const Main = () => {
         <ImageSlider slides={slides} />
       </div>
       <Movies />
+      <Animations />
     </div>
   );
 };
