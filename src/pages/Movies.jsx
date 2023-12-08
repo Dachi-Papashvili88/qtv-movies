@@ -12,11 +12,14 @@ const Movies = () => {
 
   return (
     <Wrapper>
+      <h1>ფილმები</h1>
       <ul onClick={showMovie}>
         {movies.map((movie) => (
           <li key={movie.id}>
             <img src={movie.src} alt={`Movie ${movie.id}`} />
-            <div className="icon"><AiOutlineHeart/></div>
+            <div className="icon">
+              <AiOutlineHeart />
+            </div>
             {playMovie && <h5>{movie.year}</h5>}
             {playMovie && <p>{movie.description}</p>}
           </li>
